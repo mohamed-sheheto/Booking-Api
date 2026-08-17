@@ -1,7 +1,7 @@
-import { env } from './config/env.interface';
-import { developmentEnv } from './config/environment-modes/development.env';
-import { productionEnv } from './config/environment-modes/production.env';
-import { stagingEnv } from './config/environment-modes/staging.env';
+import { env } from './env.interface';
+import { developmentEnv } from './environment-modes/development.env';
+import { productionEnv } from './environment-modes/production.env';
+import { stagingEnv } from './environment-modes/staging.env';
 
 const environments: Record<string, () => env> = {
   development: developmentEnv,
